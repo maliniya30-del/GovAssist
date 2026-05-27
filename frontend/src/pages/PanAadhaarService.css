@@ -1,0 +1,76 @@
+.pan-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f7fc;
+    padding: 40px;
+}
+.pan-container{
+    background: white;
+    padding: 35px;
+    width: 420px;
+    border-radius: 18px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+.pan-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0b3d91;
+    font-size: 30px;
+}
+.service-info{
+    background: #f4f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.service-info h3{
+    color: #0b3d91;
+    margin-bottom: 10px;
+}
+.service-info ul{
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.service-info p{
+    font-weight: bold;
+}
+.pan-form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.pan-form input,
+.pan-form select,
+.pan-form textarea{
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.pan-form textarea{
+    height: 100px;
+}
+.pan-form input:focus,
+.pan-form select:focus,
+.pan-form textarea:focus{
+    border-color: #0b3d91;
+    box-shadow: 0px 0px 8px rgba(11,61,145,0.2);
+}
+.pan-form button{
+    background: #0b3d91;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.pan-form button:hover{
+    background: #072c6b;
+    transform: translateY(-2px);
+}

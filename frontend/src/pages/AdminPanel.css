@@ -1,0 +1,67 @@
+.admin-page{
+    padding: 40px;;
+}
+.admin-page h1{
+    text-align: center;
+    color: #0b3d91;
+    margin-bottom: 30px;
+}
+.admin-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.admin-list h2{
+    color: #0b4f6c;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-left: 5px solid #ffd166;
+    padding-left: 15px;
+}
+.admin-card{
+    background: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+.admin-card h2{
+    color: #0b3d91;
+    margin-bottom: 10px;
+}
+.admin-card p{
+    margin: 8px 0;
+    font-weight: 500;
+}
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.pending{
+    background-color: orange;
+}
+.approved{
+    background-color: green;
+}
+.rejected{
+    background-color: red;
+}
+.admin-card button {
+    margin-top: 12px;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.admin-card button:hover{
+    opacity: 0.9;
+}

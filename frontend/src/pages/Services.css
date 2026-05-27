@@ -1,0 +1,50 @@
+.services-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 60px;
+    background-color: #f4f7fa;
+}
+.services-page-title {
+    text-align: center;
+    font-size: 45px;
+    color: #0b4f6c;
+    margin-bottom: 50px;
+}
+.services-page-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    
+}
+.services-page-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.services-page-card:hover {
+    transform: translateY(-8px);
+}
+.services-page-card h2 {
+    color: #0b4f6c;
+    margin-bottom: 20px;
+}
+.services-page-card p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.services-page-card button {
+    padding: 12px 20px;
+    background-color: #0b4f6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.services-page-card button:hover {
+    opacity: 0.9;
+}
+

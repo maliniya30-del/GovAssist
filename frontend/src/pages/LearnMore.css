@@ -1,0 +1,42 @@
+.learn-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f7fc;
+    padding: 40px;
+}
+.learn-container{
+    background: white;
+    padding: 35px;
+    width: 420px;
+    border-radius: 18px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+.learn-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0b3d91;
+    font-size: 30px;
+}
+.learn-container p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 30px;
+}
+.service-list h2,
+.features h2{
+    color: #0b4f6c;
+    margin-bottom: 15px;
+}
+.service-list ul,
+.features ul{
+    padding-left: 20px;
+}
+.service-list li,
+.features li{
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: #333;
+}
