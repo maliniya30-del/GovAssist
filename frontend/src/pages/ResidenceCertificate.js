@@ -10,7 +10,7 @@ function ResidenceCertificate() {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/residence-certificate/create",
+                "https://govassist-backend.onrender.com/api/residence-certificate/create",
                 { fullName,residenceType,yearsStayed,address,user:localStorage.getItem("userId")}
             );
             alert(response.data.message);

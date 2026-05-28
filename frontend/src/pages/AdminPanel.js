@@ -21,7 +21,7 @@ function AdminPanel() {
     const fetchBirthRequests = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:5000/api/birth-certificate/all"
+                "https://govassist-backend.onrender.com/api/birth-certificate/all"
             );
             setBirthRequests(response.data);
         } catch(error) {
@@ -31,7 +31,7 @@ function AdminPanel() {
     const fetchIncomeRequests = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:5000/api/income-certificate/all"
+                "https://govassist-backend.onrender.com/api/income-certificate/all"
             );
             setIncomeRequests(response.data);
         } catch(error) {
@@ -41,7 +41,7 @@ function AdminPanel() {
     const fetchCasteRequests = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:5000/api/caste-certificate/all"
+                "https://govassist-backend.onrender.com/api/caste-certificate/all"
             );
             setCasteRequests(response.data);
         } catch(error) {
@@ -51,7 +51,7 @@ function AdminPanel() {
     const fetchResidenceRequests = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:5000/api/residence-certificate/all"
+                "https://govassist-backend.onrender.com/api/residence-certificate/all"
             );
             setResidenceRequests(response.data);
         } catch(error) {
@@ -61,7 +61,7 @@ function AdminPanel() {
     const fetchPanRequests = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:5000/api/pan-aadhaar/all"
+                "https://govassist-backend.onrender.com/api/pan-aadhaar/all"
             );
             setPanRequests(response.data);
         } catch(error) {
@@ -102,7 +102,7 @@ function AdminPanel() {
                             </div>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/birth-certificate",
+                                "https://govassist-backend.onrender.com/api/birth-certificate",
                                 request._id,
                                 "Approved",
                                 fetchBirthRequests
@@ -110,7 +110,7 @@ function AdminPanel() {
                           }>Approve</button>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/birth-certificate",
+                                "https://govassist-backend.onrender.com/api/birth-certificate",
                                 request._id,
                                 "Rejected",
                                 fetchBirthRequests
@@ -134,7 +134,7 @@ function AdminPanel() {
                             </div>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/income-certificate",
+                                "https://govassist-backend.onrender.com/api/income-certificate",
                                 request._id,
                                 "Approved",
                                 fetchIncomeRequests
@@ -142,7 +142,7 @@ function AdminPanel() {
                           }>Approve</button>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/income-certificate",
+                                "https://govassist-backend.onrender.com/api/income-certificate",
                                 request._id,
                                 "Rejected",
                                 fetchIncomeRequests
@@ -165,7 +165,7 @@ function AdminPanel() {
                             </div>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/caste-certificate",
+                                "https://govassist-backend.onrender.com/api/caste-certificate",
                                 request._id,
                                 "Approved",
                                 fetchCasteRequests
@@ -173,7 +173,7 @@ function AdminPanel() {
                           }>Approve</button>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/caste-certificate",
+                                "https://govassist-backend.onrender.com/api/caste-certificate",
                                 request._id,
                                 "Rejected",
                                 fetchCasteRequests
@@ -196,7 +196,7 @@ function AdminPanel() {
                             </div>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/residence-certificate",
+                                "https://govassist-backend.onrender.com/api/residence-certificate",
                                 request._id,
                                 "Approved",
                                 fetchResidenceRequests
@@ -204,7 +204,7 @@ function AdminPanel() {
                           }>Approve</button>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/residence-certificate",
+                                "https://govassist-backend.onrender.com/api/residence-certificate",
                                 request._id,
                                 "Rejected",
                                 fetchResidenceRequests
@@ -228,7 +228,7 @@ function AdminPanel() {
                             </div>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/pan-aadhaar",
+                                "https://govassist-backend.onrender.com/api/pan-aadhaar",
                                 request._id,
                                 "Approved",
                                 fetchPanRequests
@@ -236,7 +236,7 @@ function AdminPanel() {
                           }>Approve</button>
                           <button onClick={() =>
                              updateStatus(
-                                "http://localhost:5000/api/pan-aadhaar",
+                                "https://govassist-backend.onrender.com/api/pan-aadhaar",
                                 request._id,
                                 "Rejected",
                                 fetchPanRequests

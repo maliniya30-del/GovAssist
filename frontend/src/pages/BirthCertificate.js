@@ -10,7 +10,7 @@ function BirthCertificate() {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/birth-certificate/create",
+                "https://govassist-backend.onrender.com/api/birth-certificate/create",
                 { fullName,dob,gender,address}
             );
             alert(response.data.message);

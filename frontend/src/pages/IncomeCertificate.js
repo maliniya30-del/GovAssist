@@ -10,7 +10,7 @@ function IncomeCertificate(){
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/income-certificate/create",
+                "https://govassist-backend.onrender.com/api/income-certificate/create",
                 { fullName,income,occupation,address}
             );
             alert(response.data.message);

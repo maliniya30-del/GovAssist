@@ -10,7 +10,7 @@ function CasteCertificate() {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/caste-certificate/create",
+                "https://govassist-backend.onrender.com/api/caste-certificate/create",
                 { fullName,caste,religion,address}
             );
             alert(response.data.message);

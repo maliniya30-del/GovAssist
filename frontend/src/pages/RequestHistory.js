@@ -19,7 +19,7 @@ function RequestHistory() {
         try {
             
             const response = await axios.get(
-                "http://localhost:5000/api/birth-certificate/all"
+                "https://govassist-backend.onrender.com/api/birth-certificate/all"
             );
             setBirthRequests(response.data);
         } catch(error) {
@@ -30,7 +30,7 @@ function RequestHistory() {
         try {
             
             const response = await axios.get(
-                "http://localhost:5000/api/income-certificate/all"
+                "https://govassist-backend.onrender.com/api/income-certificate/all"
             );
             setIncomeRequests(response.data);
         } catch(error) {
@@ -41,7 +41,7 @@ function RequestHistory() {
         try {
             
             const response = await axios.get(
-                "http://localhost:5000/api/caste-certificate/all"
+                "https://govassist-backend.onrender.com/api/caste-certificate/all"
             );
             setCasteRequests(response.data);
         } catch(error) {
@@ -52,7 +52,7 @@ function RequestHistory() {
         try {
            
             const response = await axios.get(
-                "http://localhost:5000/api/residence-certificate/all"
+                "https://govassist-backend.onrender.com/api/residence-certificate/all"
             );
             setResidenceRequests(response.data);
         } catch(error) {
@@ -63,7 +63,7 @@ function RequestHistory() {
         try {
             
             const response = await axios.get(
-                "http://localhost:5000/api/pan-aadhaar/all"
+                "https://govassist-backend.onrender.com/api/pan-aadhaar/all"
             );
             setPanRequests(response.data);
         } catch(error) {
