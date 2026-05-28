@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { usenavigate } from "react-router-dom";
 import axios from "axios";
 import "./AdminPanel.css";
 function AdminPanel() {
@@ -82,6 +83,12 @@ function AdminPanel() {
         } catch(error) {
             console.log(error);
         }
+    };
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        localStorage.removeItem("role");
+        navigate("/login");
     };
    
     return (
@@ -245,6 +252,7 @@ function AdminPanel() {
                     </div>
                   ))
                 }
+                <button onClick={handleLogout}>Logout</button>
 
             </div>
         </div>
