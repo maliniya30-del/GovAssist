@@ -24,7 +24,11 @@ function Login() {
             localStorage.setItem("role", response.data.role);
            
             alert(response.data.message); 
-            navigate("/dashboard");
+            if(response.data.role === "admin"){
+              navigate("/admin");
+            } else {
+              navigate("/dashboard");
+            }
           } catch(error) {
               alert("Login failed");
           }
