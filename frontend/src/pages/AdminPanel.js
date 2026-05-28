@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { usenavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./AdminPanel.css";
 function AdminPanel() {
