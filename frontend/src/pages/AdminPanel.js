@@ -94,6 +94,7 @@ function AdminPanel() {
     return (
         <div className="admin-page">
             <h1>Admin Panel</h1>
+            <button className="logout-btn" onClick={handleLogout}>Logout</button>
             <div className="admin-list">
                 <h2>Birth certificate requests</h2>
                 { birthrequests.map((request) => (
